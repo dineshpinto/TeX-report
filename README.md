@@ -7,7 +7,7 @@ A Physics lab report written in LaTeX. Also an excellent starting point for unde
 2. Install a LaTeX editor e.g. [TeXmaker](http://www.xm1math.net/texmaker/download.html)
 3. Download the ZIP from this page
 4. Extract the files in the ZIP to a folder
-5. Open Specific_Rotation.tex using your LaTeX editor  
+5. Open SpecificRotation.tex using your LaTeX editor  
 6. Compile using pdfLaTeX ('Quick Build' in TeXmaker) 
 
 ##For GNU/Linux distributions 
