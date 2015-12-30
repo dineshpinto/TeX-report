@@ -22,7 +22,7 @@ Replace steps 1 and 2 with the following terminal commands
         $ dnf install texlive-basic texmaker
         
 ## For Advanced Users
-The .cls file attached has support for adding programming code into the document. By, default the language chosen is Python, but this can be modified easily. I have used the listings package, more information can be found [here](http://texblog.org/2008/04/02/include-source-code-in-latex-with-listings/).
+The .cls file attached has support for adding programming code into the document. I have used the listings package, more information can be found [here](http://texblog.org/2008/04/02/include-source-code-in-latex-with-listings/).
 
 To test out additional fonts, I would recommend installing the full fonts package in MiKTeX  or use the following terminal command for TeXlive
 
