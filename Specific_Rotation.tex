@@ -1,54 +1,53 @@
-%---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------
 % TeX-report 
 % Written in LaTeX 2e.
 % Work of Dinesh K. Pinto, St. Stephen's College, 2015.
-%---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+%-----------------------------------------------------------------------------
 
 \documentclass{dkpinto-report}
 
-%---------------------------Headings and Page Notes--------------------------
-\title{\bfseries Determination of specific rotation of cane sugar using Laurent's half-shade polarimeter} 
-\author{D. Pinto \\ Lab VI-A}
-\date{\vspace{-5ex}}
-\rhead{\textsc{Experiment No.2}}
-\lhead{St. Stephen's College, Delhi}
+%---------------------------Title and Page Notes------------------------------
+\title{\bfseries Determination of specific rotation of cane sugar using Laurent's half-shade polarimeter} % Title in BOLD
+\author{D. Pinto \\ Lab VI-A} % Double backward slash "\\" inserts a new-line 
+\date{\vspace{-5ex}} % Reduces vertical space, the date can be added ahead 
+\rhead{\textsc{Experiment No.1}} % Right header
+\lhead{St. Stephen's College, Delhi} % Left header
 %-----------------------------------------------------------------------------
 
 \begin{document}
 
 %-----------------------------Title Page--------------------------------------
 \begin{titlepage}
-\maketitle
+\maketitle 
 
-\begin{center}
-\begin{tabular}{r l} % Alignment right and left
-Date Performed: & October 20, 2015 \\ % Date the experiment was performed
-Instructors: & Prof. A. Gupta \\  % Instructor/supervisor
+\begin{center} % Centering environment
+\begin{tabular}{r l} % Alignment right(r) and left(l)
+Date Performed: & \today \\ 
+Instructors: & Prof. A. Gupta \\  
 			 & Prof. V. Vyas
 \end{tabular}
 \end{center}
 
-\vfill
+%\vfill % Add vertical space
 
-\tableofcontents  % Compile twice after changes 
-\thispagestyle{empty}  % Remove pagenumbers from this page 
+\tableofcontents  % Compile twice to view changes 
+\thispagestyle{empty}  % Remove pagenumber from titlepage 
 
 \end{titlepage}
 
 
 
 %------------------------------Introduction------------------------------------
-\section{Introduction} 
+\section{Introduction} % Numbered section headers
 The aim of this experiment is to find the specific rotation of cane sugar using Laurent's half-shade polarimeter.\\
 The apparatus used in this experiment is as follows:
 
 \begin{enumerate}  % Numbered list
 \itemsep0em  % Reduce item separation
 \item Laurent's half-shade polarimeter
-\item Sugar solution of concentrations - 5\%, 10\%, 15\%, 20\%, 30\% and 40\% 
+\item Sugar solution of concentrations - 5\%, 10\%, 15\%, 20\%, 30\% and 40\%  % The '%' symbol is reserved for comments, to display a %, write it as \%
 \item Distilled water
-\item Sodium vapor lamp
+\item Sodium vapour lamp
 \item Digital weighing scale
 \item Measuring beaker   
 \end{enumerate}
@@ -59,18 +58,19 @@ The apparatus used in this experiment is as follows:
 \section{Theoretical overview}
 
 \subsection{Linear Polarization}
+% Use $...$ for writing inline math relations
 Linear polarization or plane polarization of electromagnetic radiation is a confinement of the electric field vector ($\vec{E}$) or magnetic field vector ($\vec{M}$) to a given plane along the direction of propagation. The orientation of a linearly polarized electromagnetic wave is defined by the direction of ($\vec{E}$). The light that is emitted by a Sodium vapor lamp is unpolarized, however, when passed through a Nicol prism, the EM wave emerges as a polarized wave. 
 
-\begin{figure}[h] \label{img:1} % Reference for this image: \ref{img:1}
-\caption{Linearly polarized light, \textit{Image: hyperphysics.phy-astr.gsu.edu/hbase/phyopt/polclas}}
-\centering
+\begin{figure}[h] \label{img:1}  % Begin a figure environment to insert image 
+\caption{Linearly polarized light. \texttt{Source:hyperphysics.phy-astr.gsu.edu}} % Add a caption, always cite your sources
+\centering  % Center image 
 \includegraphics[scale=0.4]{Images/Lin_Pol.png}
 \end{figure}
 
 \subsection{The Nicol Prism}
 When an ordinary ray of light is passed through a calcite crystal, the non-isotropy of the crystal causes the unpolarized ray to split into two rays:
 
-\begin{itemize}
+\begin{itemize} % Bulleted list
 \item An \textbf{ordinary ray} which is polarized and has its vibrations perpendicular to the principle section of the crystal;
 \item An \textbf{extra-ordinary ray} which is polarized and whose vibration is parallel to the principle section of the prism.
 \end{itemize}
@@ -90,12 +90,15 @@ Assuming that we are holding the temperature of the sample constant and the ligh
 
 If $x$ grams of sugar are dissolved in volume $V$ (cubic centimeters) of the solution and the length of the tube containing the solution is $l$ decimeter and $\theta$ is the rotation produced, then the specific rotation, $S$ of the cane sugar at the  given temperature and corresponding to the wavelength  is given by 
 
+% For equations, use the the align environment
+% \begin{align} will number equations 
+% \begn{align*} will NOT number equations
 \begin{align*}
 S  = \dfrac{\theta}{l} \times \dfrac{v}{x}  = \dfrac{\theta}{lc}
 \end{align*}
 
 
-%-----------------------------------------Experimental overview-----------------------------------------------
+%-----------------------------Experimental overview-----------------------------------------
 \section{Experimental Setup and procedure}
 
 \subsection{Laurent half shade polarimeter}
@@ -104,9 +107,11 @@ A polarimeter is a device which is used to measure the optical rotation produced
 \subsection{Action of the half shade device}
 A half-shade device consists of a circular plate of quartz, cut with faces parallel to the optic axis with a thickness such that it acts as a half-wave plate i.e. introduces a path difference of $\lambda / 2$ or a phase difference of $\pi$ between the $E$(extra-ordinary) and $O$(ordinary) vibrations. The other half is made up of a semicircular plate of glass of suitable thickness such that it transmits and absorbs the same amount of light as the quartz plate.
 
-\begin{center}
+\begin{figure}
+\centering
+\caption{Half-shade device. \texttt{Source:hyperphysics.phy-astr.gsu.edu}}
 \includegraphics[scale=0.4]{Images/half_plate.png}
-\end{center}
+\end{figure}
 
 Let the principal plane of Nicol prism $N_1$ be inclined at an angle $\theta$ to the optical axis of the quartz half. On passing through the glass half the vibrations of light remain in the same plane, this is not the case of the quartz half. On passing through the quartz, the beam is split up into the $E$ component along the optic axis of the quartz and the $O$ component perpendicular to the optic axis. On emerging these two components differ in phase by $\pi$, the $O$ component gains a phase of $\pi$ over the $E$ component. Therefore the direction of the $O$ component is now reversed. Now the resultant of the $E$ and the $O$ component will make an angle $\theta$ with the y-axis. Thus the effect of the quartz plate is to rotate the plane of polarization by $2\theta$.  
 
@@ -138,7 +143,7 @@ A small change in the angle from position 3 is easily detected by humans, who ar
 \end{enumerate}
 
 
-%---------------------------------Observational Data and Error Analysis--------------------------
+%----------------------------Observational Data and Error Analysis--------------------------
 \section{Experimental data and data analysis}
 
 \subsection{Observational Data}
@@ -151,6 +156,8 @@ The least counts of the various instruments used are as follows:
 \item Thermometer = 0.1$\ ^{\circ}$C
 \end{enumerate}
 
+
+% Table and tabular environments to generate tables
 \begin{table}[ht]  \label{table:1}
 \caption{Observed rotation and the corresponding cane-sugar concentration values}
 \centering
@@ -186,10 +193,11 @@ Thus, the specific rotation of cane sugar $S = \dfrac{\theta}{lc} = 63.93^{\circ
 
 \subsection{Graphical Plot} \label{subsec:gp}
 
+Generated using \texttt{matplotlib in Python 3.4.3}.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{Images/Plot.png}
-\caption{Plot of Angle of rotation of polarized light (in degrees) versus concentration (in g/cc)}
+\caption{Plot of Angle of rotation of polarized light (in degrees) versus concentration (in g/cc)} 
 \end{figure}
 
 
@@ -242,6 +250,7 @@ Ghatak, Ajoy (2005). Optics (3rd ed.).
 \bibitem{Jha}
 Jha, A.K. Textbook of Applied Physics, Volume 1.
 
+% Always cite your sources
 \bibitem{DKP} 
 \TeX-report. Written in \LaTeXe. Work of Dinesh K. Pinto, St. Stephen's College, 2015.
 \end{thebibliography}
