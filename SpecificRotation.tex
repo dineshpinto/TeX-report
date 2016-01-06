@@ -8,9 +8,9 @@
 
 %---------------------------Title and Page Notes------------------------------
 \title{\bfseries Determination of specific rotation of cane sugar using Laurent's half-shade polarimeter} % Title in BOLD
-\author{D. Pinto \\ Lab VI-A} % Double backward slash "\\" inserts a new-line 
-\date{\vspace{-5ex}} % Reduces vertical space, the date can be added ahead 
-\rhead{\textsc{Experiment No.1}} % Right header
+\author{D. Pinto \\ Lab VI-A}        % Double backward slash "\\" inserts a new-line 
+\date{\vspace{-5ex}}                 % Reduces vertical space, the date can be added ahead 
+\rhead{\textsc{Experiment No.1}}     % Right header
 \lhead{St. Stephen's College, Delhi} % Left header
 %-----------------------------------------------------------------------------
 
@@ -20,8 +20,8 @@
 \begin{titlepage}
 \maketitle 
 
-\begin{center} % Centering environment
-\begin{tabular}{r l} % Alignment right(r) and left(l)
+\begin{center}           % Centering environment
+\begin{tabular}{r l}     % Alignment right(r) and left(l)
 Date Performed: & \today \\ 
 Instructors: & Prof. A. Gupta \\  
 			 & Prof. V. Vyas
@@ -61,7 +61,7 @@ The apparatus used in this experiment is as follows:
 % Use $...$ for writing inline math relations
 Linear polarization or plane polarization of electromagnetic radiation is a confinement of the electric field vector ($\vec{E}$) or magnetic field vector ($\vec{M}$) to a given plane along the direction of propagation. The orientation of a linearly polarized electromagnetic wave is defined by the direction of ($\vec{E}$). The light that is emitted by a Sodium vapor lamp is unpolarized, however, when passed through a Nicol prism, the EM wave emerges as a polarized wave. 
 
-\begin{figure}[h] \label{img:1}  % Begin a figure environment to insert image 
+\begin{figure}[h] \label{img:1}  % Begin a figure environment to insert image, the 'h' tells the LaTeX compiler to place the figure 'here' (if not used, it will place it where it deems suitable)
 \caption{Linearly polarized light. \texttt{Source:hyperphysics.phy-astr.gsu.edu}} % Add a caption, always cite your sources
 \centering  % Center image 
 \includegraphics[scale=0.4]{Images/Lin_Pol.png}
@@ -194,7 +194,7 @@ Thus, the specific rotation of cane sugar $S = \dfrac{\theta}{lc} = 63.93^{\circ
 \subsection{Graphical Plot} \label{subsec:gp}
 
 Generated using \texttt{matplotlib in Python 3.4.3}.
-\begin{figure}[H]
+\begin{figure}[ht]
 \centering
 \includegraphics[scale=0.7]{Images/Plot.png}
 \caption{Plot of Angle of rotation of polarized light (in degrees) versus concentration (in g/cc)} 
@@ -241,6 +241,16 @@ The specific rotation of plane polarized sodium vapor light of wavelength $\lamb
 
 \section{Discussion(optional)}
 
+
+%\section{Programming Code}
+% This requires the minted package along with the Pygments python library. Check dkpinto-report.cls for more details.
+% Inserting code directly 
+%\begin{minted}{python}
+%for i in range(5):
+%    print("Hello World")
+%\end{minted}
+% Inserting code from a source file
+%inputminted{name_of_source_code.py}{python}
 
 %-------------------------Bibliography---------------------------------------
 \begin{thebibliography}{99}

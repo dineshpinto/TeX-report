@@ -1,103 +1,43 @@
-%---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%--------------------------------------------------------------
 % TeX-report 
 % Written in LaTeX 2e.
 % Work of Dinesh K. Pinto, St. Stephen's College, 2015.
-%---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%--------------------------------------------------------------
 
 \ProvidesClass{dkpinto-report}
 \NeedsTeXFormat{LaTeX2e}
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
-\ProcessOptions\relax
-\LoadClass[11pt]{article}
-
+\LoadClass{article}
 
 %---------------------------Packages---------------------------
 \usepackage[T1]{fontenc}
-\usepackage{textcomp}
-\usepackage{tabularx,amsmath,graphicx,amsthm,lastpage}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsthm}
+\usepackage{graphicx}
 \usepackage[margin=1in]{geometry} 
 \usepackage{cite}
 \usepackage{listings}
 \usepackage{color}
 \usepackage[final]{hyperref} 
-\usepackage{fancyhdr	}
+\usepackage{fancyhdr, lastpage}
 \usepackage{parskip}
-\usepackage[rgb, dvipsnames]{xcolor}
-\usepackage{multirow}
-\usepackage{float}
+\usepackage{multicol, multirow}
+% Uncomment the next line to use minted. For information on how to install minted, read the Additional Tools section on https://github.com/dkpinto/TeX-report
+%\usepackage{minted}
 
 %---------------------Font Choices-----------------------------
-% Default - Computer Modern
+% Default - Computer Modern, Optional - Linux libertine, Latin modern
 %\usepackage{libertine} \usepackage[libertine]{newtxmath}
 %\usepackage{lmodern}
 
-
-%--------------------------Setup---------------------------------
+%--------------------------Setup-------------------------------
 \hypersetup
 {
 	colorlinks=true,       % false: boxed links; true: colored links
-	linkcolor=blue,          % color of internal links
+	linkcolor=blue,        % color of internal links
 	citecolor=blue,        % color of links to bibliography
-	filecolor=magenta,      % color of file links
-	urlcolor=blue         
+	filecolor=magenta,     % color of file links
+	urlcolor=blue          % color of URLs
 }
 \fancyhf{}			
 \pagestyle{fancy}
-\cfoot{Page \thepage\ /\ \pageref*{LastPage}}
-
-
-%------------------- For programming code inclusion (Documentation at end)----------------------
-\definecolor{listinggray}{gray}{0.9}
-\definecolor{lbcolor}{rgb}{0.93,0.93,0.93}
-\lstset
-{
-	backgroundcolor=\color{lbcolor},
-	tabsize=4,    
-  	rulecolor=\color{lbcolor},
-    	language=Python,
-      basicstyle=\scriptsize,
-      upquote=true,
-      aboveskip={1.0\baselineskip},
-      columns=fixed,
-      showstringspaces=false,
-      extendedchars=false,
-      breaklines=true,
-      prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
-      frame=single,
-      numbers=left,
-      showtabs=false,
-      showspaces=false, 
-      showstringspaces=false,
-      identifierstyle=\ttfamily,
-      keywordstyle=\color{RedOrange}, %\color{orange},\color[rgb]{0,0,1},
-	commentstyle=\color{OliveGreen},
-  	stringstyle=\color{Sepia},  
-}
-
-
-%-------------------------------------------Documentation-------------------------------------------------
-%  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
-%  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
-%  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
-%  breaklines=true,                 % sets automatic line breaking
-%  captionpos=t,                    % sets the caption-position to bottom
-%  commentstyle=\color{mygreen},    % comment style
-%  deletekeywords={...},            % if you want to delete keywords from the given language
-%  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
-%  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
-%  frame=single,	                   % adds a frame around the code
-%  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
-%  keywordstyle=\color{blue},       % keyword style
-%  language=Python,                 % the language of the code
-%  %otherkeywords={*,...},            % if you want to add more keywords to the set
-%  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
-%  numbersep=5pt,                   % how far the line-numbers are from the code
-%  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
-%  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
-%  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
-%  showstringspaces=false,          % underline spaces within strings only
-%  showtabs=false,                  % show tabs within strings adding particular underscores
-%  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
-%  stringstyle=\color{mymauve},     % string literal style
-%  tabsize=4,	                   % sets default tabsize to 2 spaces
-%  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+\cfoot{\slshape Page \thepage/\pageref*{LastPage}}
