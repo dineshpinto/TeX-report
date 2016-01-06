@@ -21,7 +21,7 @@ Replace steps 1 and 2 with the following terminal commands
 
         $ dnf install texlive-basic texmaker
         
-## Additional Tools (for more advanced Users)
+## Additional Tools (for more advanced users)
 The following options are available in `dkpinto-report.cls`:
 
 ### Fonts
