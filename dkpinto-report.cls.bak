@@ -20,7 +20,7 @@
 \usepackage{parskip}
 \usepackage[l2tabu, orthodox]{nag}
 \usepackage{multicol, multirow}
-% To insert programming code uncomment the next line. For installation information, read the Additional Tools section on https://github.com/dkpinto/TeX-report
+% Uncomment the next line to use minted. For information on how to install minted, read the Additional Tools section on https://github.com/dkpinto/TeX-report
 %\usepackage{minted}
 
 %---------------------Font Choices-----------------------------

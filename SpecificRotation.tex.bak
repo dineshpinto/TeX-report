@@ -212,11 +212,14 @@ m = \dfrac{n\sum_i c_i \theta_i - (\sum_i c_i)(\sum_i \theta_i)}{n\sum_i c_{i}^{
 On differentiating we get an expression for error in terms of the of $(c_i, \theta_i)$ and $\Delta c$ and $\Delta \theta_i$. On substituting the values we will obtain $\Delta m = 0.061 ^{\circ} 100 cc / g$. 
 
 From the relation
-% Separate multiple equation in an align environment with \\ 
+% Separate multiple equation in align environment with a \\ 
 \begin{align*}
-& S = \dfrac{\theta}{lc} = \dfrac{m}{l} \\
-&\implies \dfrac{|\Delta S|}{S}  = \dfrac{|\Delta m|}{m} + \dfrac{|\Delta l| }{l} = \dfrac{0.061}{1.023} + \dfrac{0.01}{1.6} = 0.066\\
-&\implies \Delta S =  4.22 \approx 4^{\circ}\ 100 cc
+S &= \dfrac{\theta}{lc} = \dfrac{m}{l} \\
+\text{we get,} \\
+\dfrac{|\Delta S|}{S}  &= \dfrac{|\Delta m|}{m} + \dfrac{|\Delta l| }{l} \\
+&= \dfrac{0.061}{1.023} + \dfrac{0.01}{1.6}\\
+&= 0.066\\
+\implies \Delta S =  4.22 \approx 4^{\circ}\ 100 cc
 \end{align*}
 The error is around 6.6\%. Given this error we can round off $S = 63.93$ to $S = 64$.
 
