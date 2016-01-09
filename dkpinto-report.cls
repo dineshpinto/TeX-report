@@ -9,7 +9,6 @@
 \LoadClass{article}
 
 %---------------------------Packages---------------------------
-\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath, amsthm}
 \usepackage{graphicx}
@@ -20,7 +19,8 @@
 \usepackage{parskip}
 \usepackage[l2tabu, orthodox]{nag}
 \usepackage{multicol, multirow}
-% To insert programming code uncomment the next line. For installation information, read the Additional Tools section on https://github.com/dkpinto/TeX-report
+% To insert programming code uncomment the next 2 lines. For installation information, read the Additional Tools section on https://github.com/dkpinto/TeX-report
+%\usepackage[T1]{fontenc}
 %\usepackage{minted}
 
 %---------------------Font Choices-----------------------------
