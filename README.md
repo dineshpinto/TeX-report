@@ -10,7 +10,7 @@ A Physics lab report written in LaTeX. Also a good starting point for understand
 5. Open `SpecificRotation.tex` using your LaTeX editor  
 6. Compile using PDFLaTeX ('Quick Build' in TeXmaker) 
 
-Modify TeX-report as you see fit. The source file (`SpecificRotation.tex`) is extensively commented and contains many frequently used LaTeX commands. For a rundown of math equations, check out the [ShareLaTeX ](https://en.wikibooks.org/wiki/LaTeX/Mathematics) page.
+Modify TeX-report as you see fit. The source file (`SpecificRotation.tex`) is extensively commented and contains many frequently used LaTeX commands. For a rundown of math equations, check out the [ShareLaTeX ](https://www.sharelatex.com/learn/Mathematical_expressions) page.
 ##For GNU/Linux distributions 
 On GNU/Linux, TeXlive can be used in place of MiKTeX. Replace steps 1 and 2 with the terminal commands
 
