@@ -14,7 +14,7 @@ Modify TeX-report as you see fit. The source file (`SpecificRotation.tex`) is ex
 ##For GNU/Linux distributions 
 On GNU/Linux, TeXlive can be used in place of MiKTeX. Replace steps 1 and 2 with the terminal commands
 
-#### For Ubuntu/ElementaryOS/Linux Mint
+#### For Ubuntu/ElementaryOS/Linux Mint/Debian
 
         $ apt-get install texlive texmaker
   
@@ -48,4 +48,4 @@ I chose to use the minted package to insert programming code. Installation on Li
 5. Call minted in your LaTeX source file. You can call it directly (copy-paste the programming code into the file) or read a programming source file (over 300 languages supported). For more information, check out the [ShareLaTeX page](https://www.sharelatex.com/learn/Code_Highlighting_with_minted#Reference_guide).
 6. Complile the code with PDFLaTeX
 
-I would recommend a quick glance through the minted [documentation](http://ftp.sunet.se/pub/text-processing/CTAN/macros/latex/contrib/minted/minted.pdf). Also note that the `-shell-escape` option in Step 4 is not entirely safe as it could allow LaTeX to run potentially arbitrary commands on your system, however, it is nescessary as minted makes calls to Pygments (an external Python library). Please disable it when not using minted. The original PDFLaTeX is: `pdflatex -synctex=1 -interaction=nonstopmode %.tex`
+I would recommend a quick glance through the minted [documentation](http://ftp.sunet.se/pub/text-processing/CTAN/macros/latex/contrib/minted/minted.pdf). Also note that the `-shell-escape` option in Step 4 is not entirely safe as it could allow LaTeX to run potentially arbitrary commands on your system, however, it is necessary as minted makes calls to Pygments (an external Python library). Please disable it when not using minted. The original PDFLaTeX is: `pdflatex -synctex=1 -interaction=nonstopmode %.tex`
